@@ -16,8 +16,8 @@ import io.github.sukgu.Shadow;
 public class AdministratorCertfications {
        public static void main(String[] args) throws InterruptedException {
     	   ChromeOptions options = new ChromeOptions();
-   		options.addArguments("--remote-allow-origins=*");
-   		ChromeDriver driver = new ChromeDriver(options);	
+      		options.addArguments("--disable-notifications", "start-maximized");
+      		ChromeDriver driver = new ChromeDriver(options);	
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.get("https://qeagle-dev-ed.my.salesforce.com/");
