@@ -21,7 +21,7 @@ public class ArchitectCertifications {
    			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
    			driver.get("https://qeagle-dev-ed.my.salesforce.com/");
    			driver.findElement(By.id("username")).sendKeys("hari.radhakrishnan@qeagle.com");
-   			driver.findElement(By.id("password")).sendKeys("Leaf@123");
+   			driver.findElement(By.id("password")).sendKeys("Leaf@1234");
    			driver.findElement(By.id("Login")).click();
    			
    			driver.findElement(By.xpath("//span[text()='Learn More']")).click();
